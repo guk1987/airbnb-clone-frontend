@@ -1,10 +1,10 @@
+import { Text } from '@chakra-ui/react';
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
 function App() {
   return (
-    <div> hello world
+    <div>
+      <Text fontSize={"6xl"} color={"gray.200"}>hello world</Text> 
     </div>
   );
 }
