@@ -1,4 +1,4 @@
-import { Box, Button, HStack, IconButton, Input, InputGroup, InputLeftElement, Modal, ModalBody, ModalCloseButton, ModalContent, ModalHeader, ModalOverlay, VStack, useDisclosure } from "@chakra-ui/react";
+import { Box, Button, Divider, HStack, IconButton, Input, InputGroup, InputLeftElement, Modal, ModalBody, ModalCloseButton, ModalContent, ModalHeader, ModalOverlay, Text, VStack, useDisclosure } from "@chakra-ui/react";
 import { Outlet } from "react-router-dom";
 import { FaAirbnb, FaMoon, FaUserNinja, FaLock } from "react-icons/fa";
 
@@ -41,6 +41,26 @@ export default function Root(){
                                 </InputGroup>               
                             </VStack>
                             <Button mt={4} w={"100%"} colorScheme="red">Log in</Button>
+                            <HStack>
+                                <Divider/>
+                                <Text
+                                    textTransform={"uppercase"}
+                                    color={"gray.400"}
+                                    fontSize={"xs"}
+                                    as={"b"}
+                                    >
+                                        Or
+                                </Text>
+                                <Divider/>
+                            </HStack>
+                            <VStack>
+                                <Button colorScheme="telegram" w= "100%">
+                                    Continue with Github
+                                </Button>
+                                <Button colorScheme="yellow" w = "100%" mb = "2">
+                                    Continue with KaKao
+                                </Button>
+                            </VStack>
                         </ModalBody>
                     </ModalContent>
                 </Modal>
